@@ -19,6 +19,7 @@ library(tidyverse)
 library(mapproj)
 library(vegan)
 library(rlist)
+
 ```
 
 # Insert csv file and filter only countries included in the Mediterranean region
@@ -327,7 +328,7 @@ taxa.disti
 ##write.csv(taxa.disti, file = "Taxa_Country.csv")
 
 taxa.disti.plot <- ggplot(taxa.disti, aes(x=reorder(continent, Taxa_number), y=Taxa_number, fill = continent)) + geom_bar(stat="identity") +
-        theme_classic() + theme(legend.position = "right") + geom_text(aes(label=Taxa_number)) + coord_flip() + ylab("") + xlab("")
+        theme_classic() + theme(legend.position = "right") + coord_flip() + ylab("") + xlab("")
 taxa.disti.plot
 #ggsave("taxa.disti.plot.png")
 ```

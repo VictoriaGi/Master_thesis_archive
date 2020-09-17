@@ -1,0 +1,22 @@
+Type: Compendium
+Package: Medcyanolist
+Title: Medcyano
+Version: 0.0.1
+Authors@R: 
+    person(given = "Victoria",
+           family = "Giourieva",
+           role = "aut",
+           email = "vgiouriev@bio.auth.gr")
+Description: Mediterranean cyanobacteria list
+License: What license it uses
+Depends: 
+    betapart,
+    knitr,
+    mapproj,
+    RColorBrewer,
+    rlist,
+    rmarkdown,
+    tidyverse,
+    vegan
+Encoding: UTF-8
+LazyData: true
